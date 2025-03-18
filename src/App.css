@@ -6,12 +6,12 @@ body {
 /* Sidebar Styles */
 .sidebar {
     min-height: 100vh;
-    background-color: #1a1a1a; /* Dark background for sidebar */
+    background-color: whitesmoke; /* Dark background for sidebar */
     transition: all 0.3s ease;
 }
 
 .sidebar .nav-link {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0.5, 0.75);
     padding: 0.75rem 1rem;
     border-radius: 0.25rem;
     margin-bottom: 0.25rem;
@@ -96,6 +96,10 @@ body {
 /* Collapsed Sidebar Styles */
 .sidebar-collapsed {
     width: 140px; /* Width when collapsed */
+}
+
+.sidebar-header-text {
+    color: black;
 }
 
 @media (max-width: 767.98px) {

@@ -14,8 +14,8 @@ const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
         <div className={`sidebar p-3 text-white ${isCollapsed ? 'sidebar-collapsed' : ''}`}>
             <div className="d-flex align-items-center justify-content-between mb-4 px-1">
                 <div className="d-flex align-items-center">
-                    <i className="fas fa-store fs-4 me-2"></i>
-                    <h1 className="fs-5 fw-bold m-0 sidebar-header-text">Order Manager</h1>
+                    <i className="fas fa-store fs-4 me-2" style={{color: '#01c64b'}}></i>
+                    <h1 className="fs-5 fw-bold m-0 sidebar-header-text">Bio Coders</h1>
                 </div>
                 <button className="btn btn-sm text-white p-1 hover-effect" onClick={toggleSidebar}>
                     <i className={`fas ${isCollapsed ? 'fa-chevron-right' : 'fa-chevron-left'}`}></i>
