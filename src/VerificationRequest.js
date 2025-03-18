@@ -72,7 +72,7 @@ const VerificationRequest = () => {
                 <div className="d-flex justify-content-end">
                     <button 
                         type="submit" 
-                        className="btn text-white"
+                        className="btn verification-request"
                         disabled={isSubmitting}
                     >
                         {isSubmitting && (
