@@ -1,6 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom'; // Changed href to NavLink for SPA
 
 const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
     const navItems = [
@@ -16,7 +15,7 @@ const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
         <div className={`sidebar p-3 text-white ${isCollapsed ? 'sidebar-collapsed' : ''}`}>
             <div className="d-flex align-items-center justify-content-between mb-4 px-1">
                 <div className="d-flex align-items-center">
-                    <i className="fas fa-store fs-4 me-2" style={{color: '#01c64b'}}></i>
+                    <i className="fas fa-store fs-4 me-2" style={{ color: '#01c64b' }}></i>
                     <h1 className="fs-5 fw-bold m-0 sidebar-header-text">Bio Coders</h1>
                 </div>
                 <button className="btn btn-sm text-white p-1 hover-effect" onClick={toggleSidebar}>
@@ -25,11 +24,16 @@ const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
             </div>
             <nav className="nav flex-column">
                 {navItems.map(item => (
-                    <a key={item.id} className={`nav-link ${activePage === item.id ? 'active' : ''}`} href={item.id}>
-                        <i className={`fas ${item.icon}`}></i> <span>{item.label}</span>
-                    </a>
+                    <NavLink
+                        key={item.id}
+                        className={`nav-link ${activePage === item.id ? 'active' : ''}`}
+                        to={item.id}
+                    >
+                        <i className={`fas ${item.icon}`}></i>
+                        <span className="nav-item-text">{item.label}</span>
+                    </NavLink>
                 ))}
-                </nav>
+            </nav>
         </div>
     );
 };

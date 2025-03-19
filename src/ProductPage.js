@@ -7,7 +7,6 @@ import Sidebar from './Sidebar'; // Assuming you have a sidebar component
 const ProductPage = () => {
     return (
         <div className="d-flex">
-            <Sidebar activePage="products" isCollapsed={false} toggleSidebar={() => {}} />
             <div className="flex-grow-1">
                 <Routes>
                     <Route path="/products" element={<ProductListing />} />
