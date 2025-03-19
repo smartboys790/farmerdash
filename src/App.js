@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import ProductListing from './ProductListing'; 
+import ProductDetails from './ProductDetails';
 import Sidebar from './Sidebar';
 import DashboardOverview from './DashboardOverview';
 import RecentOrders from './RecentOrders';
 import VerificationRequest from './VerificationRequest';
+
 
 const App = () => {
     const [orders] = useState([
@@ -40,3 +44,17 @@ const App = () => {
 };
 
 export default App;
+
+// export const Product = () => {
+//     return (
+//             <div className="d-flex">
+//                 <Sidebar activePage="products" isCollapsed={false} toggleSidebar={() => {}} />
+//                 <div className="flex-grow-1">
+//                     <Routes path="/products" >
+//                         <Route path="/products" element={<ProductListing />} />
+//                         <Route path="/products/:id" element={<ProductDetails />} />
+//                     </Routes>
+//                 </div>
+//             </div>
+//     );
+//  };

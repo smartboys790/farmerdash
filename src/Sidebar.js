@@ -1,4 +1,7 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+// import App from './ProductPage';
+// import Sidebar from './Sidebar';
 
 const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
     const navItems = [
@@ -23,11 +26,11 @@ const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
             </div>
             <nav className="nav flex-column">
                 {navItems.map(item => (
-                    <a key={item.id} className={`nav-link ${activePage === item.id ? 'active' : ''}`} href="#">
+                    <a key={item.id} className={`nav-link ${activePage === item.id ? 'active' : ''}`} href={item.id}>
                         <i className={`fas ${item.icon}`}></i> <span>{item.label}</span>
                     </a>
                 ))}
-            </nav>
+                </nav>
         </div>
     );
 };

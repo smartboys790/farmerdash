@@ -28,7 +28,7 @@ const RecentOrders = ({ orders }) => {
                             <tr key={order.id}>
                                 <td className="small">{order.id}</td>
                                 <td className="small">{order.customer}</td>
-                                <td className="small">¥{order.amount}</td>
+                                <td className="small">₹{order.amount}</td>
                                 <td>
                                     <span className={`badge ${getStatusClass(order.status)}`}>
                                         {order.status}

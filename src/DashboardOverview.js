@@ -17,7 +17,7 @@ const DashboardOverview = ({ totalOrders, pendingOrders, revenue, products, cert
                 <div className="col-md-3 col-sm-6">
                     <div className="border rounded p-3 h-100">
                         <div className="small text-secondary text-uppercase fw-medium">Revenue</div>
-                        <div className="fs-3 fw-bold mt-2">¥{revenue}</div>
+                        <div className="fs-3 fw-bold mt-2">₹{revenue}</div>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6">
