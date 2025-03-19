@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import App from './ProductPage';
-// import Sidebar from './Sidebar';
+
 
 const Sidebar = ({ activePage, isCollapsed, toggleSidebar }) => {
     const navItems = [

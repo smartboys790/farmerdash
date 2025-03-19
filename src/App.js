@@ -6,6 +6,11 @@ import Sidebar from './Sidebar';
 import DashboardOverview from './DashboardOverview';
 import RecentOrders from './RecentOrders';
 import VerificationRequest from './VerificationRequest';
+import Products from './Products';
+import Analytics from './Analytics';
+import Orders from './Orders';
+import Dashboard from './components/Dashboard';
+
 
 
 const App = () => {
@@ -25,26 +30,36 @@ const App = () => {
     const toggleSidebar = () => setIsCollapsed(!isCollapsed);
 
     return (
+        
         <div className="d-flex">
-            <Sidebar activePage={activePage} isCollapsed={isCollapsed} toggleSidebar={toggleSidebar} />
+            <Sidebar activePage="dashboard" isCollapsed={isCollapsed} toggleSidebar={toggleSidebar} />
             <div className="flex-grow-1">
-                <div className="container-fluid py-4 px-4">
-                    <DashboardOverview 
-                        totalOrders={totalOrders} 
-                        pendingOrders={pendingOrders} 
-                        revenue={revenue} 
-                        products={products} 
-                        certifications={certifications} />
-                    <RecentOrders orders={orders} />
-                    <VerificationRequest />
-                </div>
+                <Routes>
+                    <Route path="/dashboard" element={
+                        <div className="container-fluid py-4 px-4">
+                            <DashboardOverview 
+                                totalOrders={totalOrders} 
+                                pendingOrders={pendingOrders} 
+                                revenue={revenue} 
+                                products={products} 
+                                certifications={certifications} />
+                            <RecentOrders orders={orders} />
+                            <VerificationRequest />
+                        </div>
+                    }/>
+                    <Route path="/product" element={<ProductListing/>}/>
+                    <Route path='product/:id' element={<ProductDetails/>}/>
+                    <Route path="/products" element={<Products />} />
+                    <Route path="/orders" element={ <Orders/>}/>
+                    <Route path="profile" Component={Dashboard}/>
+                    <Route path="analytics" element={ <Analytics/>}></Route>
+                </Routes>
             </div>
         </div>
     );
 };
 
-
-// export const App = () => {
+// export const Apps = () => {
 //     return (
 //         <div className="d-flex">
 //                 <Sidebar activePage="products" isCollapsed={false} toggleSidebar={() => {}} />

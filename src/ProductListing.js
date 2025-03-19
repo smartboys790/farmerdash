@@ -39,7 +39,7 @@ const ProductListing = () => {
                                 <h5 className="card-title">{product.name}</h5>
                                 <p className="card-text">Price:₹{product.price}/-</p>
                                 <button className="btn btn-primary" style={{"background-color":' #01c64b',borderColor:'black',borderBlock:"none"}}>
-                                    <Link to={`/products/${product.id}`} style={{"color":'white'}}>View Details</Link>
+                                    <Link to={`/product/${product.id}`} style={{"color":'white'}}>View Details</Link>
                                 </button>
                             </div>
                         </div>
