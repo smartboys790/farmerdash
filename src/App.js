@@ -8,7 +8,7 @@ import RecentOrders from './RecentOrders';
 import VerificationRequest from './VerificationRequest';
 
 
-const Apps = () => {
+const App = () => {
     const [orders] = useState([
         { id: 'ORD001', customer: 'John Smith', amount: '124.50', status: 'Pending' },
         { id: 'ORD002', customer: 'Sarah Davis', amount: '228.25', status: 'Completed' },
@@ -44,18 +44,18 @@ const Apps = () => {
 };
 
 
-export const App = () => {
-    return (
-        <div className="d-flex">
-                <Sidebar activePage="products" isCollapsed={false} toggleSidebar={() => {}} />
-                <div className="flex-grow-1">
-                    <Routes path="/products" >
-                        <Route path="/products" element={<ProductListing />} />
-                        <Route path="/products/:id" element={<ProductDetails />} />
-                    </Routes>
-                </div>
-            </div>
-    );
-};
+// export const App = () => {
+//     return (
+//         <div className="d-flex">
+//                 <Sidebar activePage="products" isCollapsed={false} toggleSidebar={() => {}} />
+//                 <div className="flex-grow-1">
+//                     <Routes path="/products" >
+//                         <Route path="/products" element={<ProductListing />} />
+//                         <Route path="/products/:id" element={<ProductDetails />} />
+//                     </Routes>
+//                 </div>
+//             </div>
+//     );
+// };
 
 export default App;
