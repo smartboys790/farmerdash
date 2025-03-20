@@ -64,8 +64,8 @@ const ProductDetails = () => {
                 <div className="col-md-6">
                     <h2>Price:</h2><h3> ₹{product.price} (Incl. of all taxes)</h3>
                     <br></br>
-                    <h2>Weight:</h2>
-                    <p><strong> {product.weight}</strong></p><br></br>
+                    
+                    <p><strong><h2>Weight:</h2> {product.weight}</strong></p><br></br>
                     <p><strong><h2>Status: </h2>{product.stockStatus}</strong></p><br></br>
                     <p><strong><h2>Delivery: </h2>{product.deliveryTime}</strong></p><br></br>
                     <p><strong><h2>Sold By:</h2> {product.soldBy}</strong></p><br></br>
