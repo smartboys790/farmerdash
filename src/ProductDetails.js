@@ -62,7 +62,7 @@ const ProductDetails = () => {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <h2>Price:</h2><h3> ₹{product.price.toFixed(2)} (Incl. of all taxes)</h3>
+                    <h2>Price:</h2><h3> ₹{product.price} (Incl. of all taxes)</h3>
                     <br></br>
                     <h2>Weight:</h2>
                     <p><strong> {product.weight}</strong></p><br></br>
