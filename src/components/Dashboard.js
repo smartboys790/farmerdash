@@ -36,6 +36,12 @@ const Dashboard = () => {
         <button className="nav-link" onClick={() => setCurrentTab('documents')}>Documents</button>
         <button className="nav-link" onClick={() => setCurrentTab('settings')}>Settings</button>
       </div>
+      <button className="btn btn-danger" onClick={() => { 
+        // Clear user session data (if applicable)
+        window.location.href = '/login'; // Redirect to login page
+      }}>
+        Logout
+      </button>
       <div className="mt-3">
         {renderTab()}
       </div>
