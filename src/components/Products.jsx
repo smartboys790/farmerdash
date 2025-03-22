@@ -42,7 +42,7 @@ const Products = () => {
 
     return (
         <div className="container py-4">
-            <h1 className="mb-4">Manage Products</h1>
+            <h1 className="mb-4 text-center">Manage Products</h1>
             <form onSubmit={handleAddProduct}>
                 <div className="mb-3">
                     <label className="form-label">Product Name</label>
@@ -120,12 +120,13 @@ const Products = () => {
 
             <h2 className="mt-4">Product List</h2>
             <ul className="list-group">
+                {products.length === 0 && <li className="list-group-item text-center">No products available.</li>}
                 {products.map((product) => (
                     <li key={product.id} className="list-group-item">
                         <h4>Name: {product.name} </h4>
                         <h5>Price: ₹{product.price}</h5>
-                        <h5>Quantity: {product.quantity}</h5>
-                        <h5>Product Description: {product.description}</h5>
+                        <h5>Quantity: {productQuantity}</h5>
+                        <h5>Product Description: {product.Description}</h5>
                         <h5>Product Weight: {product.weight} KG</h5>
                         <h5>Product Status: {product.status}</h5>
 

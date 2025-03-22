@@ -1,7 +1,7 @@
 import React from 'react';
-import SalesChart from './SalesChart';
+import SalesChart from './components/SalesChart';
 
-const salesData= [30,50,76,346,666,6436]
+const salesData= [30,50,76,34,66,64,45,89,23,45,56]
 const Analytics = () => {
     const totalSales = 1234.56; // Example total sales amount
     const totalOrders = 50; // Example total number of orders

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DashboardOverview = ({ totalOrders, pendingOrders, revenue, products, certifications }) => {
+const DashboardOverview = ({ totalOrders, pendingOrders, revenue, products, rating }) => {
     return (
         <div className="bg-white rounded shadow p-4 mb-4">
             <h1 className="fs-4 fw-bold text-dark mb-3">Dashboard Overview</h1>
@@ -28,8 +28,8 @@ const DashboardOverview = ({ totalOrders, pendingOrders, revenue, products, cert
                 </div>
                 <div className="col-md-3 col-sm-6">
                     <div className="border rounded p-3 h-100">
-                        <div className="small text-secondary text-uppercase fw-medium">Certifications</div>
-                        <div className="fs-3 fw-bold mt-2">{certifications}</div>
+                        <div className="small text-secondary text-uppercase fw-medium">Ratings</div>
+                        <div className="fs-3 fw-bold mt-2">{rating}</div>
                     </div>
                 </div>
             </div>

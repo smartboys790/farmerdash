@@ -1,0 +1,118 @@
+/* Dashboard.css
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    min-height: 100vh;
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar .nav-link {
+    color: rgba(0, 0, 0.5, 0.75);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active .btn-primary {
+    color: black;
+    background-color: #01c64b !important;
+  }
+  
+  .sidebar .nav-link i {
+    width: 1.5rem;
+    text-align: center;
+    margin-right: 0.75rem;
+  }
+  
+  /* Badge Styles */
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  
+  /* Spinner Styles */
+  .spinner {
+    animation: spin 1s linear infinite;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  /* Status Badge Styles */
+  .status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .status-completed {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status-processing {
+    background-color: #dbeafe;
+    color: #01c64b;
+  }
+  
+  /* Dashboard Overview Styles */
+  .dashboard-overview {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Recent Orders Table Styles */
+  .table-responsive {
+    margin-top: 1rem;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Verification Request Styles */
+  .verification-request {
+    background-color: #01c64b;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Collapsed Sidebar Styles */
+  .sidebar-collapsed {
+    width: 140px;
+  }
+  
+  .sidebar-header-text {
+    color: black;
+  }
+  
+  @media (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+    .sidebar-collapsed .nav-link span,
+    .sidebar-collapsed .sidebar-header-text {
+        display: none;
+    }
+    .sidebar-collapsed {
+        width: 80px;
+    }
+  }
+   */
